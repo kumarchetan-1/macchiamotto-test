@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        .content-wrapper {
+            max-width: 1280px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+
+        .bg-img-height {
+            height: 404px;
+        }
+
+        @media screen and (max-width:767px) {
+            .bg-img-height {
+                height: 250px;
+            }
+        }
+
+        /* Hero Image */
+        #hero {
+            margin-top: 25px;
+        }
+
+        #hero .hero_background_img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:767px) {
+            #hero .hero_background_img {
+                background-position: 35% 27% !important;
+            }
+        }
+
+        /* Categories */
+
+        #four-col-conatainer .row {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 2.6%;
+        }
+
+        #four-col-conatainer .column {
+            flex: 22.5%;
+            padding: 20px;
+            min-height: 296px;
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #four-col-conatainer .column {
+                flex: 45%;
+            }
+
+            #four-col-conatainer .row {
+                flex-wrap: wrap;
+                row-gap: 25px !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #four-col-conatainer .row {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            #four-col-conatainer .column {
+                min-height: 300px;
+                background-position: 17% 25% !important;
+            }
+        }
+
+        #four-col-conatainer .text-conta {
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.70);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        #four-col-conatainer .text-conta h3 {
+            color: #FFF;
+            text-align: center;
+            font-family: Lato;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            /* 30px */
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .subtitle h2 {
+            color: #231F20;
+            text-align: center;
+            background-size: cover;
+            font-family: Lato;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 103.8%;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        #four-col-conatainer .inside_full_width {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media(max-width: 450px) {
+            #four-col-conatainer .text-conta h3 {
+                font-size: 14px;
+            }
+
+            .subtitle h2 {
+                font-size: 22px;
+            }
+        }
+
+        /* Moto Race */
+
+        #moto-race .moto-race-conta {
+            display: flex;
+            align-items: center;
+        }
+
+        #moto-race .text-cont-left h2 {
+            color: #FFF;
+            font-family: Lato;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+            margin-bottom: 28px;
+        }
+
+        #moto-race .text-cont-left {
+            max-width: 487px;
+            margin: 0 auto 0 50px;
+        }
+
+        .button-conta a.cta-button {
+            color: #FFF;
+            text-align: center;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: inline-block;
+            box-sizing: border-box;
+            text-decoration: none;
+            padding: 14px 30px;
+            background: #ED1B24;
+            border: 1px solid transparent;
+            transition: all .3s ease-in-out;
+        }
+
+        .button-conta a.cta-button:hover {
+            background: white;
+            color: #ED1B24;
+            border-color: #ED1B24;
+        }
+
+        @media (max-width:767px) {
+            #moto-race .text-cont-left h2 {
+                font-size: 30px;
+            }
+
+            #moto-race .text-cont-left {
+                margin: 0 auto;
+                text-align: center;
+                padding: 0 20px;
+                max-width: 100%;
+                width: 100%;
+            }
+            .button-conta a.cta-button{
+                width: 100%; 
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:300px) {
+            #moto-race .text-cont-left h2 {
+                font-size: 24px;
+            }
+        }
+
+        /* Black Moto */
+        #moto-black .text-cont-right h2 {
+            color: #FFF;
+            font-family: Lato;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: capitalize;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        #moto-black .text-cont-right p {
+            color: #FFF;
+            font-family: Lato;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 40px;
+            max-width: 569px;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        #moto-black .moto-black-conta .text-cont-right {
+            margin: 0 50px 0 auto;
+            max-width: 100%;
+            text-align: right;
+            padding-left: 20px;
+        }
+
+        #moto-black .moto-black-conta {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width:767px) {
+
+            #moto-black .moto-black-conta.bg-img-height,
+            #moto-race .moto-race-conta {
+                height: 300px;
+            }
+
+            #moto-black .text-cont-right h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            #moto-black .text-cont-right p {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+
+            #moto-black .moto-black-conta .text-cont-right {
+                text-align: center;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+        }
+
+        @media (max-width:500px) {
+
+            #moto-black .moto-black-conta.bg-img-height,
+            #moto-race .moto-race-conta {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <section id="hero" class="mb-50">
+        <div class="content-wrapper">
+            <div class="hero_background_img bg-img-height"
+                style="background: url(./Hero.webp) no-repeat center; background-size: cover;">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="four-col-conatainer" class="mb-50">
+        <div class="content-wrapper">
+            <div class="top-text-conta subtitle">
+                <h2>CATEGORIE PRINCIPALI</h2>
+            </div>
+            <div class="four-col-adjust">
+                <div class="row">
+                    <div class="card_content_wrapper column"
+                        style="background: url(./Assessori\ Moto.webp) no-repeat center; background-size: cover;">
+                        <div class="inside_full_width">
+                            <div class="text-conta">
+                                <h3> ACCESSORI MOTO </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_content_wrapper column"
+                        style="background: url(./abbigliamento\ MOTO.webp) no-repeat center; background-size: cover;">
+                        <div class="inside_full_width">
+                            <div class="text-conta">
+                                <h3> ABBIGLIAMENTO MOTO</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_content_wrapper column"
+                        style="background: url(./Caschi\ MOTO.webp) no-repeat center; background-size: cover;">
+                        <div class="inside_full_width">
+                            <div class="text-conta">
+                                <h3>CASCHI MOTO </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_content_wrapper column"
+                        style="background: url(./Ricambi\ MOTO.webp) no-repeat center; background-size: cover;">
+                        <div class="inside_full_width">
+                            <div class="text-conta">
+                                <h3> RICAMBI MOTO</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-50" id="moto-race">
+        <div class="content-wrapper">
+            <div class="top-text-conta subtitle">
+                <h2>DA NON PERDERE</h2>
+            </div>
+            <div class="moto-race-conta bg-img-height"
+                style="background: url(./Moto-race.webp) no-repeat center; background-size: cover;">
+                <div class="text-cont-left">
+                    <h2>KIT PLASTICHE CROSS</h2>
+                    <div class="button-conta">
+                        <a href="" class="cta-button" id="visit-la-categoria">
+                            VISITA LA CATEGORIA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-50" id="moto-black">
+        <div class="content-wrapper">
+            <div class="moto-black-conta bg-img-height"
+                style="background: url(./Black-moto.webp) no-repeat center; background-size: cover;">
+                <div class="text-cont-right">
+                    <h2>Inscriviti Alla Newsletter</h2>
+                    <p>Vuoi usufruire di un 10% di sconto sul tuo primo ordine? Iscriviti al nostro sito!</p>
+                    <div class="button-conta">
+                        <a href="" class="cta-button" id="visit-la-categoria">
+                            Iscriviti
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
